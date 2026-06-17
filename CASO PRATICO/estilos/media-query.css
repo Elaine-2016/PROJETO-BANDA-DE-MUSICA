@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* ===========================
+   MEDIA QUERIES
+   =========================== */
+
+/* ===========================
+   IMAGENS DE CARDS - Mobile First
+   =========================== */
+
+/* Mobile (padrão) - imagens flexíveis */
+.card-album img,
+.integrante-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 0;
+    background-color: #000;
+}
+
+/* ===========================
+   Tablet (≥768px)
+   =========================== */
+@media (min-width: 768px) {
+    /* Tipografia */
+    .p-footer { font-size: 0.9rem; }
+    .navbar .navbar-brand { font-size: 1.8rem; }
+
+    .main-sobre h1 { font-size: 2.5rem; }
+    .main-sobre h2 { font-size: 2rem; }
+    .main-sobre p { font-size: 1.1rem; }
+
+    /* Tabelas */
+    .tabela-container { padding: 40px; }
+    .table th, .table td { font-size: 1.1rem; }
+    
+    /* Imagens dos cards - altura fixa a partir de tablet */
+    .card-album img,
+    .integrante-card img {
+        height: 250px;
+        object-fit: cover;
+        background-color: transparent;
+    }
+}
+
+/* ===========================
+   Desktop (≥1024px)
+   =========================== */
+@media (min-width: 1024px) {
+    /* Tipografia */
+    .p-footer { font-size: 1rem; }
+    .navbar .navbar-brand { font-size: 2rem; }
+
+    .main-sobre h1 { font-size: 3rem; }
+    .main-sobre h2 { font-size: 2.5rem; }
+    .main-sobre p { font-size: 1.2rem; }
+    
+    /* Imagens dos cards - mantém altura fixa */
+    .card-album img,
+    .integrante-card img {
+        height: 280px;
+    }
+}
+
+/* ===========================
+   Ajustes específicos para mobile pequeno
+   =========================== */
+@media (max-width: 576px) {
+    /* Garante que imagens não fiquem esticadas em mobile */
+    .card-album img,
+    .integrante-card img {
+        aspect-ratio: 16/9;
+        object-fit: contain;
+    }
+    
+    /* Tabelas mais compactas */
+    .table th, .table td {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+    
+    /* Ajuste de títulos */
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}

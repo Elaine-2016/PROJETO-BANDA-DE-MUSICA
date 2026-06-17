@@ -1,0 +1,645 @@
+@charset "UTF-8";
+
+/* ===========================
+   Importando fontes do Google Fonts
+   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* ===========================
+   Paleta de cores
+   =========================== */
+:root {
+    --laranja-queimado: #E85A2C;
+    --vermelho-vibrante: #D93A2B;
+    --amarelo-dourado: #F5B932;
+
+    --roxo-escuro: #3C1F5C;
+    --azul-noite: #1D2C59;
+    --cinza-medio: #777777;
+    --cinza-claro: #F3F4F6;
+
+    --preto: #000000;
+    --branco: #FFFFFF;
+
+    --font-title: 'Bebas Neue', cursive;
+    --font-subtitle: 'Passion One', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+/* ===========================
+   RESET
+   =========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   BODY
+   =========================== */
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--preto);
+    background-color: var(--branco);
+}
+
+/* ===========================
+   IMAGENS RESPONSIVAS
+   =========================== */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header .logo {
+    max-width: 180px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+header {
+    color: var(--branco);
+    text-align: center;
+    padding: 40px 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header .logo {
+    position: relative;
+    z-index: 2;
+    max-width: 200px;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(28, 28, 28, 0.55);
+    z-index: 1;
+}
+
+/* Fundos específicos */
+.pagina-index header { background-image: url("../imagens/bg-index.jpg"); }
+.pagina-sobre header { background-image: url("../imagens/bg-sobre.jpg"); }
+.pagina-albuns header { background-image: url("../imagens/bg-sobre.jpg"); }
+.pagina-tours header { background-image: url("../imagens/Fone-de-ouvido.jpg"); }
+.pagina-contatos header { background-image: url("../imagens/bg-sobre.jpg"); }
+.pagina-loja header { background-image: url("../imagens/Fone-de-ouvido.jpg"); }
+
+/* ===========================
+   NAVBAR
+   =========================== */
+.navbar {
+    background-color: var(--azul-noite);
+    font-family: var(--font-subtitle);
+}
+
+.navbar .navbar-brand {
+    color: var(--amarelo-dourado);
+    font-weight: bold;
+    font-family: var(--font-title);
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.navbar .navbar-brand:hover {
+    color: var(--laranja-queimado);
+    text-decoration: none;
+}
+
+.navbar .nav-link {
+    color: var(--branco);
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--laranja-queimado);
+}
+
+/* ===========================
+   MAIN
+   =========================== */
+main {
+    padding: 40px 20px;
+    min-height: 100vh;
+    
+}
+
+/* Home */
+.main-home {
+    background-image: url("../imagens/bg-main-index.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--branco);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(28, 28, 28, 0.6);
+    z-index: 1;
+}
+
+.main-home .container,
+.main-home .video-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.main-home .container {
+    padding-top: 20px;
+}
+
+.main-home p {
+    color: var(--branco);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Sobre */
+.main-sobre {
+    background-image: url("../imagens/backgraund\ color.jfif");
+    background-size: cover;
+    background-position: center;
+    color: var(--branco);
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.main-sobre::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(28,28,28,0.6);
+    z-index: 1;
+}
+
+.main-sobre > * { 
+    position: relative; 
+    z-index: 2; 
+}
+
+/* Tours */
+.tabela-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-tours {
+    background-image: url("../imagens/backgraund\ color.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--branco);
+    min-height: 100vh;
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.main-tours::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(28, 28, 28, 0.6);
+    z-index: 1;
+}
+
+.main-tours > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Contatos */
+.main-contatos {
+    background-image: url("../imagens/backgraund\ color.jfif"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--branco);
+    min-height: 100vh;
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.main-contatos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(28, 28, 28, 0.6);
+    z-index: 1;
+}
+
+.main-contatos > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* ===========================
+   TABELAS
+   =========================== */
+.table th {
+    background-color: var(--azul-noite);
+    color: var(--amarelo-dourado);
+    font-size: 1.1rem;
+    padding: 0.8rem;
+}
+
+.table td {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: var(--cinza-claro);
+}
+
+/* ===========================
+   BOTÕES
+   =========================== */
+.btn-primary,
+.contact-form button[type="submit"] {
+    background-color: var(--laranja-queimado);
+    color: var(--branco);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-subtitle);
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.contact-form button[type="submit"]:hover {
+    background-color: var(--vermelho-vibrante);
+    color: var(--branco);
+    border-color: var(--vermelho-vibrante);
+}
+
+/* ===========================
+   LINKS
+   =========================== */
+a {
+    color: var(--laranja-queimado);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--vermelho-vibrante);
+    text-decoration: underline;
+}
+
+/* ===========================
+   HEADINGS
+   =========================== */
+h1, h2, h3 {
+    color: var(--amarelo-dourado);
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: var(--font-subtitle);
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: var(--font-subtitle);
+    font-size: 1.5rem;
+}
+
+h4, h5, h6 {
+    font-family: var(--font-body);
+    font-weight: bold;
+}
+
+/* ===========================
+   CARDS
+   =========================== */
+.card-album, 
+.integrante-card {
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-album {
+    background-color: var(--cinza-medio);
+    color: var(--branco);
+}
+
+.card-album-body, 
+.card-body {
+    padding: 15px;
+    flex: 1;
+}
+
+.card-title {
+    color: var(--amarelo-dourado);
+    font-weight: bold;
+}
+
+.card-album:hover, 
+.integrante-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.integrante-card {
+    background-color: var(--azul-noite);
+    color: var(--branco);
+}
+
+/* ===========================
+   FORMULÁRIO
+   =========================== */
+form.contact-form {
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.pagina-contatos main {
+    color: var(--branco);
+}
+
+.pagina-contatos .form-label {
+    color: var(--amarelo-dourado);
+    font-weight: bold;
+}
+
+.pagina-contatos .form-control {
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+.pagina-contatos .form-control:focus {
+    background-color: var(--branco);
+    color: var(--preto);
+    border-color: var(--laranja-queimado);
+    box-shadow: 0 0 0 0.25rem rgba(232, 90, 44, 0.5);
+}
+
+.pagina-contatos .invalid-feedback {
+    color: var(--branco);
+    background-color: var(--vermelho-vibrante);
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* ===========================
+   VIDEO WRAPPER
+   =========================== */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Esta linha remove a borda da forma correta */
+}
+
+/* ===========================
+   PLAYER DE ÁUDIO
+   =========================== */
+.custom-audio-player {
+    width: 100%;
+    max-width: 700px; /* Limita a largura em ecrãs grandes */
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+footer {
+    background-color: var(--azul-noite);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.p-footer {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: var(--amarelo-dourado);
+    margin: 0 5px;
+}
+
+footer a:hover { 
+    color: var(--laranja-queimado); 
+}
+
+footer i {
+    font-size: 2rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer a:hover i {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+/* Redes sociais */
+.fa-facebook { color: #1877f2; }
+.fa-instagram { color: #e4405f; }
+.fa-x-twitter { color: #000000; }
+.fa-youtube { color: #ff0000; }
+
+/* ===========================
+   SECÇÃO RECENT WORKS (Traduzido)
+   =========================== */
+
+/* Fundo da secção (usei o seu --azul-noite) */
+#recent-works {
+    background-color: var(--azul-noite);
+    color: var(--branco);
+}
+
+/* Título da secção (usa a cor que já definiu) */
+#recent-works h2 {
+    color: var(--amarelo-dourado);
+    font-family: var(--font-title);
+    font-size: 3rem;
+}
+
+#recent-works .text-white-50 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.1rem;
+}
+
+/* Fundo de cada item da lista (usei o seu --cinza-claro) */
+.portfolio-item {
+    background-color: var(--cinza-claro);
+    color: var(--preto);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+}
+
+.portfolio-item .item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+/* Título e subtítulo da música */
+.portfolio-item .item-title {
+    font-family: var(--font-subtitle);
+    color: var(--preto);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.portfolio-item .item-subtitle {
+    font-family: var(--font-body);
+    color: var(--cinza-medio);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Botão de Play (usei a sua cor --laranja-queimado) */
+.portfolio-item .play-button {
+    background-color: var(--laranja-queimado);
+    color: var(--branco);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-item .play-button:hover {
+    background-color: var(--vermelho-vibrante);
+}
+
+/* Barra de progresso */
+.progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0; /* cinza mais claro */
+    border-radius: 99px;
+    height: 8px;
+}
+
+.progress-bar-fill {
+    background-color: var(--laranja-queimado);
+    height: 8px;
+    border-radius: 99px;
+}
+
+/* Botão "Read More" (usei o seu .btn-primary) */
+#recent-works .btn-primary {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+}
+
+/* --- ESTILOS DA LOJA ONLINE --- */
+
+/* Fundo escuro por trás da janela da Lightbox */
+.lightbox-overlay {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050; /* Z-index alto para ficar por cima da navbar do Bootstrap */
+}
+
+/* O conteúdo principal da Lightbox */
+.lightbox-content {
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Efeito de Hover nos cartões da loja (opcional) */
+#product-list .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#product-list .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* --- Correção para as imagens dos Álbuns --- */
+.pagina-albuns .card-album .card-img-top {
+    width: 100%;
+    height: 250px; /* Mantém todos os cartões com a mesma altura e alinhados */
+    object-fit: contain; /* GARANTE QUE A IMAGEM APARECE TODA SEM CORTES */
+    background-color: #f8f9fa; /* Coloca um fundo claro caso a imagem seja mais estreita que o cartão */
+    padding: 10px; /* Dá um pequeno respiro à volta da imagem para ficar mais elegante */
+}
