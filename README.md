@@ -13,14 +13,15 @@ Projeto desenvolvido como Caso Prático de Bases de Dados MySQL no curso de **Fu
 | 🏠 Página Inicial | 💳 Processo de Checkout |
 | :---: | :---: |
 | ![Homepage](./images/home.png) | ![Checkout](./images/checkout.png) |
-*(Interface de compra de bilhetes com verificação inteligente de sessão)*
+
 
 | **🛒 Loja de Merchandising** | **⚙️ Painel de Administração** |
 | :---: | :---: |
 | ![Loja](./images/loja.png) | ![Admin](./images/admin.png) |
+
 *(Catálogo de produtos físicos e gestão do carrinho de compras)*
 *(Dashboard com visualização de métricas e estado das vendas em tempo real)*
-
+*(Interface de compra de bilhetes com verificação inteligente de sessão)*
 ---
 
 ## 🚀 Funcionalidades Principais
