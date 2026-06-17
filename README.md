@@ -19,9 +19,6 @@ Projeto desenvolvido como Caso Prático de Bases de Dados MySQL no curso de **Fu
 | :---: | :---: |
 | ![Loja](./images/loja.png) | ![Admin](./images/admin.png) |
 
-*(Catálogo de produtos físicos e gestão do carrinho de compras)*
-*(Dashboard com visualização de métricas e estado das vendas em tempo real)*
-*(Interface de compra de bilhetes com verificação inteligente de sessão)*
 ---
 
 ## 🚀 Funcionalidades Principais
