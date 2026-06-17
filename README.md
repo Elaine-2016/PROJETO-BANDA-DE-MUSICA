@@ -10,17 +10,15 @@ Projeto desenvolvido como Caso Prático de Bases de Dados MySQL no curso de **Fu
 
 ## 📸 Demonstração Visual
 
-### 🎫 Sistema de Bilheteira e Smart Checkout
+| 🏠 Página Inicial | 💳 Processo de Checkout |
+| :---: | :---: |
+| ![Homepage](./images/home.png) | ![Checkout](./images/checkout.png) |
 *(Interface de compra de bilhetes com verificação inteligente de sessão)*
-[ARRASTA A TUA IMAGEM DA PÁGINA DE BILHETES PARA AQUI]
 
-### 🛒 Loja de Merchandising
+| **🛒 Loja de Merchandising** | **⚙️ Painel de Administração** |
+| ![Loja](./images/loja.png) | ![Admin](./images/admin.png) |
 *(Catálogo de produtos físicos e gestão do carrinho de compras)*
-[ARRASTA A TUA IMAGEM DA LOJA PARA AQUI]
-
-### ⚙️ Painel de Administração
 *(Dashboard com visualização de métricas e estado das vendas em tempo real)*
-[ARRASTA A TUA IMAGEM DO ADMIN PARA AQUI]
 
 ---
 
@@ -49,5 +47,4 @@ Projeto desenvolvido como Caso Prático de Bases de Dados MySQL no curso de **Fu
 **Elaine Gonçalves**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/elainegoncalvessantos)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Elaine-2016)<img width="1865" height="933" alt="Captura de tela 2026-06-17 160525" src="https://github.com/user-attachments/assets/ccc23d26-f6a0-4828-8544-e56331dc4f8d" />
-<img width="1317" height="1018" alt="Captura de tela 2026-06-17 160232" src="https://github.com/user-attachments/assets/f0b236dc-6af4-4aa8-8e43-71b82333f1e2" />
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Elaine-2016)dc-6af4-4aa8-8e43-71b82333f1e2" 
